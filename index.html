@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="instagram-container">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+
+            <a href="#" class="instagram-logo">Instagram</a>
+
+            <nav class="sidebar-menu">
+
+                <a href="#" class="menu-item active">
+                    <i class="bi bi-house-door"></i>
+                    <span>Home</span>
+                </a>
+
+                <button class="menu-item" id="searchBtn">
+                    <i class="bi bi-search"></i>
+                    <span>Search</span>
+                </button>
+
+                <a href="#" class="menu-item">
+                    <i class="bi bi-compass"></i>
+                    <span>Explore</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="bi bi-play-btn"></i>
+                    <span>Reels</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="bi bi-chat-dots"></i>
+                    <span>Messages</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="bi bi-heart"></i>
+                    <span>Notifications</span>
+                </a>
+
+                <button class="menu-item" id="createBtn">
+                    <i class="bi bi-plus-square"></i>
+                    <span>Create</span>
+                </button>
+
+                <a href="#" class="menu-item">
+                    <img src="https://i.pravatar.cc/100?img=47" alt="Profile" class="menu-profile">
+                    <span>Profile</span>
+                </a>
+
+            </nav>
+
+            <button class="menu-item more-menu">
+                <i class="bi bi-list"></i>
+                <span>More</span>
+            </button>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- SEARCH BAR -->
+            <form class="search-bar" id="searchForm">
+                <input type="text" id="searchInput"
+                    placeholder="Search people or captions...">
+                <button type="submit">Search</button>
+            </form>
+
+            <!-- STORIES -->
+            <section class="stories-section">
+
+                <div class="story" data-name="Your story">
+                    <div class="story-image own-story">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Your story">
+                        <span class="add-story">+</span>
+                    </div>
+                    <p>Your story</p>
+                </div>
+
+                <div class="story" data-name="cristiano">
+                    <div class="story-image">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Cristiano story">
+                    </div>
+                    <p>cristiano</p>
+                </div>
+
+                <div class="story" data-name="travel_world">
+                    <div class="story-image">
+                        <img src="https://i.pravatar.cc/100?img=32" alt="Travel story">
+                    </div>
+                    <p>travel_world</p>
+                </div>
+
+                <div class="story" data-name="photography">
+                    <div class="story-image">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Photography story">
+                    </div>
+                    <p>photography</p>
+                </div>
+
+                <div class="story" data-name="nature_love">
+                    <div class="story-image">
+                        <img src="https://i.pravatar.cc/100?img=11" alt="Nature story">
+                    </div>
+                    <p>nature_love</p>
+                </div>
+
+                <div class="story" data-name="sports_daily">
+                    <div class="story-image">
+                        <img src="https://i.pravatar.cc/100?img=44" alt="Sports story">
+                    </div>
+                    <p>sports_daily</p>
+                </div>
+
+            </section>
+
+
+            <!-- POSTS -->
+            <section class="posts-container" id="postsContainer">
+
+                <!-- POST 1 -->
+                <article class="post">
+
+                    <div class="post-header">
+
+                        <div class="post-user">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="User profile">
+
+                            <div>
+                                <h4>formula1_official <span class="verified">✓</span></h4>
+                                <p>Monaco Grand Prix</p>
+                            </div>
+                        </div>
+
+                        <button class="more-btn" aria-label="More options">
+                            <i class="bi bi-three-dots"></i>
+                        </button>
+
+                    </div>
+
+                    <img class="post-image"
+                        src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1000&q=85"
+                        alt="Formula racing car">
+
+                    <div class="post-actions">
+
+                        <div class="left-actions">
+                            <button class="like-btn" aria-label="Like post">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                            <button class="comment-btn" aria-label="Comment">
+                                <i class="bi bi-chat"></i>
+                            </button>
+
+                            <button class="share-btn" aria-label="Share">
+                                <i class="bi bi-send"></i>
+                            </button>
+                        </div>
+
+                        <button class="save-btn" aria-label="Save post">
+                            <i class="bi bi-bookmark"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="post-details">
+
+                        <p class="likes"><strong>24,586 likes</strong></p>
+
+                        <p class="caption">
+                            <strong>formula1_official</strong>
+                            Speed, passion and unforgettable moments on the track!
+                            🏎️ #Formula1 #Racing
+                        </p>
+
+                        <button class="view-comments">View all 2 comments</button>
+
+                        <div class="comments-list">
+                            <p><strong>racing_fan</strong> What a beautiful shot!</p>
+                            <p><strong>sports_daily</strong> Amazing!</p>
+                        </div>
+
+                        <form class="comment-form">
+                            <input type="text" placeholder="Add a comment..." required>
+                            <button type="submit">Post</button>
+                        </form>
+
+                    </div>
+
+                </article>
+
+
+                <!-- POST 2 -->
+                <article class="post">
+
+                    <div class="post-header">
+
+                        <div class="post-user">
+                            <img src="https://i.pravatar.cc/100?img=32" alt="User profile">
+
+                            <div>
+                                <h4>beautiful_destinations</h4>
+                                <p>Switzerland</p>
+                            </div>
+                        </div>
+
+                        <button class="more-btn" aria-label="More options">
+                            <i class="bi bi-three-dots"></i>
+                        </button>
+
+                    </div>
+
+                    <img class="post-image"
+                        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85"
+                        alt="Beautiful mountain lake">
+
+                    <div class="post-actions">
+
+                        <div class="left-actions">
+                            <button class="like-btn" aria-label="Like post">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                            <button class="comment-btn" aria-label="Comment">
+                                <i class="bi bi-chat"></i>
+                            </button>
+
+                            <button class="share-btn" aria-label="Share">
+                                <i class="bi bi-send"></i>
+                            </button>
+                        </div>
+
+                        <button class="save-btn" aria-label="Save post">
+                            <i class="bi bi-bookmark"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="post-details">
+
+                        <p class="likes"><strong>18,342 likes</strong></p>
+
+                        <p class="caption">
+                            <strong>beautiful_destinations</strong>
+                            Nature is the best place to find peace. 🌿
+                            #Travel #Nature
+                        </p>
+
+                        <button class="view-comments">View all 1 comment</button>
+
+                        <div class="comments-list">
+                            <p><strong>nature_lover</strong> Absolutely beautiful!</p>
+                        </div>
+
+                        <form class="comment-form">
+                            <input type="text" placeholder="Add a comment..." required>
+                            <button type="submit">Post</button>
+                        </form>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-sidebar">
+
+            <!-- MY PROFILE -->
+            <div class="profile-section">
+
+                <div class="suggestion-user">
+                    <img src="https://i.pravatar.cc/100?img=47" alt="My profile">
+
+                    <div>
+                        <h4>sumithra_g</h4>
+                        <p>Sumithra</p>
+                    </div>
+                </div>
+
+                <button class="follow-btn">Switch</button>
+
+            </div>
+
+
+            <!-- SUGGESTIONS -->
+            <div class="suggestions-heading">
+                <h4>Suggested for you</h4>
+                <button>See All</button>
+            </div>
+
+
+            <div class="suggestions-list">
+
+                <div class="suggestion-user">
+                    <img src="https://i.pravatar.cc/100?img=15" alt="John profile">
+                    <div>
+                        <h4>john_doe</h4>
+                        <p>Followed by alex_23</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <div class="suggestion-user">
+                    <img src="https://i.pravatar.cc/100?img=25" alt="Travel profile">
+                    <div>
+                        <h4>travel_diaries</h4>
+                        <p>Suggested for you</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <div class="suggestion-user">
+                    <img src="https://i.pravatar.cc/100?img=33" alt="Nature profile">
+                    <div>
+                        <h4>nature_photos</h4>
+                        <p>Followed by 5 others</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <div class="suggestion-user">
+                    <img src="https://i.pravatar.cc/100?img=48" alt="Fashion profile">
+                    <div>
+                        <h4>fashion_world</h4>
+                        <p>Suggested for you</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <div class="suggestion-user">
+                    <img src="https://i.pravatar.cc/100?img=21" alt="Motivation profile">
+                    <div>
+                        <h4>daily_motivation</h4>
+                        <p>New to Instagram</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+            </div>
+
+
+            <div class="right-footer">
+                <p>About · Help · Press · API · Jobs · Privacy · Terms</p>
+                <p>© 2026 INSTAGRAM CLONE</p>
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <!-- CREATE POST MODAL -->
+    <div class="modal-overlay" id="createModal">
+
+        <div class="create-modal">
+
+            <div class="modal-header">
+                <h3>Create new post</h3>
+                <button id="closeModal" aria-label="Close">&times;</button>
+            </div>
+
+            <form id="createPostForm">
+
+                <label for="imageUrl">Image URL</label>
+                <input type="url" id="imageUrl"
+                    placeholder="Enter image URL" required>
+
+                <label for="postCaption">Caption</label>
+                <textarea id="postCaption"
+                    placeholder="Write a caption..."></textarea>
+
+                <button type="submit" class="share-post-btn">
+                    Share
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- MOBILE NAVIGATION -->
+    <nav class="mobile-nav">
+
+        <a href="#"><i class="bi bi-house-door-fill"></i></a>
+        <a href="#"><i class="bi bi-search"></i></a>
+        <button id="mobileCreateBtn"><i class="bi bi-plus-square"></i></button>
+        <a href="#"><i class="bi bi-play-btn"></i></a>
+        <a href="#"><img src="https://i.pravatar.cc/100?img=47" alt="Profile"></a>
+
+    </nav>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
